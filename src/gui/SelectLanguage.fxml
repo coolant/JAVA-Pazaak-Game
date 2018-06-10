@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" type="BorderPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <HBox alignment="TOP_CENTER" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnNed" mnemonicParsing="false" onAction="#chooseNed" text="Nederlands">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnEng" mnemonicParsing="false" onAction="#chooseEng" text="English">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnFra" mnemonicParsing="false" onAction="#chooseFra" text="Français">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </center>
+   <top>
+      <VBox alignment="CENTER" minHeight="-Infinity" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="WELKOM PAZAAK GANGSTER" textAlignment="CENTER">
+               <font>
+                  <Font size="26.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="selecteer taal aub/ Please select language/ choisir language svp" />
+         </children>
+      </VBox>
+   </top>
+</fx:root>

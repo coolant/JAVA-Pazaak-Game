@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" type="BorderPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <VBox alignment="CENTER" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnRegisterPlayer" mnemonicParsing="false" onAction="#btnRegisterPlayer" text="Register Player">
+               <VBox.margin>
+                  <Insets bottom="20.0" top="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnPlayGame" mnemonicParsing="false" onAction="#btnPlayGame" text="Play Game">
+               <VBox.margin>
+                  <Insets bottom="20.0" top="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnLoadGame" mnemonicParsing="false" onAction="#btnLoadGame" text="Load Game">
+               <VBox.margin>
+                  <Insets bottom="20.0" top="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnChanLan" mnemonicParsing="false" onAction="#changeLanguage" text="Change Language">
+               <VBox.margin>
+                  <Insets bottom="20.0" top="20.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <Label fx:id="lblTitle" text="Main Menu" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+   </top>
+</fx:root>

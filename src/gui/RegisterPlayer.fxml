@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" type="BorderPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label fx:id="lblName" prefWidth="100.0" text="Name :" underline="true">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="txtName" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="40.0" right="40.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label fx:id="lblBirthyear" prefWidth="100.0" text="Birthyear :" underline="true">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="txtbirthyear" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="40.0" right="40.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER">
+               <children>
+                  <Button fx:id="btnCancel" mnemonicParsing="false" onAction="#cancel" text="Cancel">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btnSubmit" mnemonicParsing="false" onAction="#submit" text="Submit">
+                     <HBox.margin>
+                        <Insets left="100.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <Label fx:id="lblRegister" text="Register a player" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets top="30.0" />
+         </BorderPane.margin>
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </top>
+</fx:root>

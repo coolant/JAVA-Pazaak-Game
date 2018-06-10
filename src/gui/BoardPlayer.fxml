@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-color: black; -fx-border-width: 5px;" type="VBox" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="playerName" text="name Player">
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </Label>
+      <BorderPane>
+         <left>
+            <Label fx:id="playerScore" text="playerScore" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets left="30.0" />
+               </BorderPane.margin>
+            </Label>
+         </left>
+      </BorderPane>
+      <GridPane fx:id="cardGridPane" alignment="CENTER" style="-fx-border-color: black; -fx-border-width: 2px;">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <VBox.margin>
+            <Insets bottom="30.0" left="30.0" right="30.0" />
+         </VBox.margin>
+      </GridPane>
+      <VBox>
+         <children>
+            <HBox fx:id="gameDeckBox" style="-fx-border-color: black; -fx-border-width: 2px;">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin></HBox>
+            <HBox fx:id="btnHBox" alignment="CENTER">
+               <children>
+                  <Button fx:id="btnEndTurn" mnemonicParsing="false" onAction="#endTurn" text="End Turn">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </HBox.margin></Button>
+                  <Button fx:id="btnStand" layoutX="75.0" layoutY="10.0" mnemonicParsing="false" onAction="#stand" text="Stand">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </HBox.margin></Button>
+                  <Button fx:id="btnForfeit" layoutX="140.0" layoutY="10.0" mnemonicParsing="false" onAction="#forfeit" text="Forfeit">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </HBox.margin></Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</fx:root>
